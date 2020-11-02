@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "roboto";
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 60%;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header {
+  height: 140px;
+}
+header .intro {
+  justify-content: space-between;
+  border-bottom: 1px solid #ebebeb;
+}
+header .intro__contact {
+  height: 50px;
+}
+header .intro__contact .time, header .intro__contact .phone, header .intro__contact .contact {
+  padding: 0 15px;
+  margin: 20px 0;
+}
+header .intro__contact .phone {
+  border-left: 1px solid #ebebeb;
+  border-right: 1px solid #ebebeb;
+}
+header .intro__contact p {
+  display: inline-block;
+  color: #888889;
+  font-size: 14px;
+  font-family: "roboto";
+}
+header .intro__contact i {
+  color: #888889;
+}
+header .intro__icon i {
+  color: #888889;
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid #ebebeb;
+  margin: 8px 5px;
+  font-size: 14px;
+}
+header .header {
+  justify-content: space-between;
+}
+header .header__logo {
+  margin: 25px 6px;
+}
+header .header__menu .menu {
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-family: "roboto";
+}
+header .header__menu .menu a {
+  text-decoration: none;
+  color: #252528;
+  margin: 40px 6px;
+  display: inline-block;
+}
+header .header__menu .active {
+  border-bottom: 2px solid #89c441;
+}
+
+/*# sourceMappingURL=style.css.map */

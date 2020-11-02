@@ -1,6 +1,6 @@
 @import './mixin.scss';
 
-// @include customFontFace();
+@include customFontFace('roboto', '../fonts/Roboto-Regular.ttf');
 
 * {
   padding: 0;
@@ -50,6 +50,28 @@ header {
         border: 1px solid $colorBorder;
         margin: 8px 5px;
         font-size: 14px;
+      }
+    }
+  }
+  .header {
+    justify-content: space-between;
+    &__logo {
+      margin: 25px 6px;
+    }
+    &__menu {
+      .menu {
+        list-style: none;
+        text-transform: uppercase;
+        @include customFont(1rem, 'roboto');
+        a {
+          text-decoration: none;
+          color: $colorBlack;
+          margin: 40px 6px;
+          display: inline-block;
+        }
+      }
+      .active {
+        border-bottom: 2px solid $colorGreen;
       }
     }
   }
