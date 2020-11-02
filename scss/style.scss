@@ -1,0 +1,56 @@
+@import './mixin.scss';
+
+// @include customFontFace();
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 60%;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header {
+  height: 140px;
+  .intro {
+    justify-content: space-between;
+    border-bottom: 1px solid $colorBorder;
+  
+    &__contact {
+      height: 50px;
+      .time, .phone, .contact {
+        padding: 0 15px;
+        margin: 20px 0;
+      }
+      .phone {
+        border-left: 1px solid $colorBorder;
+        border-right: 1px solid $colorBorder;
+      }
+      p {
+        display: inline-block;
+        color: $colorParagraph;
+        @include customFont(14px, 'roboto');
+      }
+      i {
+        color: $colorParagraph;
+      }
+    }
+    &__icon {
+      i {
+        color: $colorParagraph;
+        padding: 10px;
+        border-radius: 50%;
+        border: 1px solid $colorBorder;
+        margin: 8px 5px;
+        font-size: 14px;
+      }
+    }
+  }
+}
