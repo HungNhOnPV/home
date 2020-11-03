@@ -17,12 +17,11 @@
   flex-wrap: wrap;
 }
 
-header {
-  height: 140px;
-}
 header .intro {
-  justify-content: space-between;
   border-bottom: 1px solid #ebebeb;
+}
+header .intro .wrapper__intro {
+  justify-content: space-between;
 }
 header .intro__contact {
   height: 50px;
@@ -67,11 +66,66 @@ header .header__menu .menu {
 header .header__menu .menu a {
   text-decoration: none;
   color: #252528;
-  margin: 40px 6px;
+  margin: 40px 8px 37px 8px;
   display: inline-block;
+  position: relative;
+}
+header .header__menu .menu a span {
+  font-size: 0.7rem;
+  font-family: "roboto";
+  background: #89c441;
+  color: #fff;
+  position: absolute;
+  top: -0.5rem;
+  left: 0.8rem;
+  padding: 0.1rem 0.3rem;
+  border-radius: 50%;
 }
 header .header__menu .active {
-  border-bottom: 2px solid #89c441;
+  border-bottom: 3px solid #89c441;
+}
+
+main .banner {
+  background: url(../assets/background.jpg) center no-repeat;
+  background-size: cover;
+  height: 730px;
+  width: 100%;
+}
+main .banner .content {
+  padding-top: 15%;
+}
+main .banner .content__headline {
+  font-size: 3.75rem;
+  font-family: "roboto";
+  font-weight: 100;
+  text-transform: uppercase;
+}
+main .banner .content__headline span {
+  color: #89c441;
+}
+main .banner .content__headline--weight {
+  font-weight: 700;
+}
+main .banner .content__description {
+  font-size: 1.125rem;
+  font-family: "roboto";
+  margin: 35px 0;
+  color: #3a3a3a;
+}
+main .banner .content__btn {
+  padding: 18px 25px;
+  font-size: 1rem;
+  font-family: "roboto";
+  text-transform: capitalize;
+  border-radius: 3px;
+  border: 1px solid #89c441;
+  background: #89c441;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+main .banner .content__btn:hover {
+  color: #89c441;
+  background: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
