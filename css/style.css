@@ -127,5 +127,64 @@ main .banner .content__btn:hover {
   color: #89c441;
   background: #fff;
 }
+main .section1 {
+  margin-bottom: 100px;
+}
+main .section1 .title {
+  text-align: center;
+  margin: 95px 20% 50px 20%;
+}
+main .section1 .title .headline {
+  font-size: 32px;
+  font-family: "roboto";
+  margin-bottom: 35px;
+  text-transform: capitalize;
+  color: #252528;
+}
+main .section1 .title .description {
+  font-size: 14px;
+  font-family: "roboto";
+  color: #888889;
+  line-height: 2;
+}
+main .section1 .wrapper-cart {
+  justify-content: space-between;
+}
+main .section1 .wrapper-cart .cart {
+  width: 32%;
+  padding: 50px 40px;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+main .section1 .wrapper-cart .cart__headline {
+  font-size: 22px;
+  font-family: "roboto";
+  color: #252528;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+  text-align: center;
+}
+main .section1 .wrapper-cart .cart__description {
+  font-size: 14px;
+  font-family: "roboto";
+  color: #888889;
+  line-height: 1.4;
+  text-align: center;
+  margin-bottom: 30px;
+}
+main .section1 .wrapper-cart .cart__image {
+  display: block;
+  margin: auto;
+}
+main .section1 .wrapper-cart .cart .btn {
+  font-size: 14px;
+  font-family: "roboto";
+  color: #888889;
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=style.css.map */
