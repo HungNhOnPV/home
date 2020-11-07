@@ -170,7 +170,7 @@ main {
     }
   }
   .project {
-    background: #f5f9fc;
+    background: $colorBackground;
     .header {
       display: flex;
       justify-content: space-between;
@@ -278,6 +278,63 @@ main {
         padding: 40px;
         @include customFont(14px, 'roboto');
         color: $colorParagraph;
+      }
+    }
+  }
+  .service {
+    background: $colorBackground;
+    .container {
+      @include customTitle;
+      padding-bottom: 90px;
+      max-width: 70%;
+      .wrapper-cart {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .cart {
+          display: flex;
+          width: 32%;
+          box-sizing: border-box;
+          background: $colorWhite;
+          border: 1px solid $colorBorder;
+          border-radius: 3px;
+          padding: 30px;
+          &__image {
+            width: 50px;
+            height: 45px;
+          }
+          &__headline {
+            @include customFont(22px, 'roboto');
+            margin-left: 10px;
+            text-transform: capitalize;
+          }
+          &__description {
+            @include customFont(12px, 'roboto');
+            margin: 10px 0 20px 10px;
+            color: $colorParagraph;
+            line-height: 1.5;
+          }
+          &__btn {
+            @include customFont(12px, 'roboto');
+            margin-left: 10px;
+            color: $colorParagraph;
+            cursor: pointer;
+          }
+        }
+      }
+      .pagination {
+        margin-top: 35px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        i {
+          padding: 5px;
+          border: 2px solid #cfe1b0;
+          color: #cfe1b0;
+        }
+        .active {
+          border: 2px solid $colorGreen;
+          color: $colorGreen;
+        }
       }
     }
   }

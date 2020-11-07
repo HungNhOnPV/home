@@ -328,5 +328,81 @@ main .construction .wrapper-content .box--padding {
   font-family: "roboto";
   color: #888889;
 }
+main .service {
+  background: #f5f9fc;
+}
+main .service .container {
+  padding-bottom: 90px;
+  max-width: 70%;
+}
+main .service .container .title {
+  text-align: center;
+  margin: 95px 20% 50px 20%;
+}
+main .service .container .title .headline {
+  font-size: 32px;
+  font-family: "roboto";
+  margin-bottom: 35px;
+  text-transform: capitalize;
+  color: #252528;
+}
+main .service .container .title .description {
+  font-size: 14px;
+  font-family: "roboto";
+  color: #888889;
+  line-height: 2;
+}
+main .service .container .wrapper-cart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main .service .container .wrapper-cart .cart {
+  display: flex;
+  width: 32%;
+  box-sizing: border-box;
+  background: #fff;
+  border: 1px solid #ebebeb;
+  border-radius: 3px;
+  padding: 30px;
+}
+main .service .container .wrapper-cart .cart__image {
+  width: 50px;
+  height: 45px;
+}
+main .service .container .wrapper-cart .cart__headline {
+  font-size: 22px;
+  font-family: "roboto";
+  margin-left: 10px;
+  text-transform: capitalize;
+}
+main .service .container .wrapper-cart .cart__description {
+  font-size: 12px;
+  font-family: "roboto";
+  margin: 10px 0 20px 10px;
+  color: #888889;
+  line-height: 1.5;
+}
+main .service .container .wrapper-cart .cart__btn {
+  font-size: 12px;
+  font-family: "roboto";
+  margin-left: 10px;
+  color: #888889;
+  cursor: pointer;
+}
+main .service .container .pagination {
+  margin-top: 35px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+main .service .container .pagination i {
+  padding: 5px;
+  border: 2px solid #cfe1b0;
+  color: #cfe1b0;
+}
+main .service .container .pagination .active {
+  border: 2px solid #89c441;
+  color: #89c441;
+}
 
 /*# sourceMappingURL=style.css.map */
