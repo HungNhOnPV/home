@@ -253,5 +253,80 @@ main .project__btn:hover {
   background: #fff;
   color: #89c441;
 }
+main .construction .title {
+  text-align: center;
+  margin: 95px 20% 50px 20%;
+}
+main .construction .title .headline {
+  font-size: 32px;
+  font-family: "roboto";
+  margin-bottom: 35px;
+  text-transform: capitalize;
+  color: #252528;
+}
+main .construction .title .description {
+  font-size: 14px;
+  font-family: "roboto";
+  color: #888889;
+  line-height: 2;
+}
+main .construction .wrapper-content {
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: auto auto;
+  margin-bottom: 105px;
+}
+main .construction .wrapper-content .box {
+  width: 50%;
+  box-sizing: border-box;
+  position: relative;
+}
+main .construction .wrapper-content .box__image {
+  width: 100%;
+}
+main .construction .wrapper-content .box__headline {
+  font-size: 24px;
+  font-family: "roboto";
+  text-transform: capitalize;
+  color: #252528;
+  position: relative;
+}
+main .construction .wrapper-content .box__headline::after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 0;
+  z-index: 1;
+  width: 60px;
+  height: 3px;
+  background: #89c441;
+}
+main .construction .wrapper-content .box__description {
+  margin-top: 40px;
+}
+main .construction .wrapper-content .box__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  color: #89c441;
+  padding: 20px 24px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  box-shadow: 0 0 50px #fff;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+main .construction .wrapper-content .box:hover .box__icon {
+  opacity: 1;
+}
+main .construction .wrapper-content .box--padding {
+  padding: 40px;
+  font-size: 14px;
+  font-family: "roboto";
+  color: #888889;
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -131,21 +131,7 @@ main {
   }
   .section1 {
     margin-bottom: 100px;
-    .title {
-      text-align: center;
-      margin: 95px 20% 50px 20%;
-      .headline {
-        @include customFont(32px, 'roboto');
-        margin-bottom: 35px;
-        text-transform: capitalize;
-        color: $colorBlack;
-      }
-      .description {
-        @include customFont(14px, 'roboto');
-        color: $colorParagraph;
-        line-height: 2;
-      }
-    }
+    @include customTitle;
     .wrapper-cart {
       justify-content: space-between;
       .cart {
@@ -241,6 +227,57 @@ main {
       &:hover {
         background: $colorWhite;
         color: $colorGreen;
+      }
+    }
+  }
+  .construction {
+    @include customTitle;
+    .wrapper-content {
+      display: flex;
+      flex-wrap: wrap;
+      grid-template-columns: auto auto;
+      margin-bottom: 105px;
+      .box {
+        width: 50%;
+        box-sizing: border-box;
+        position: relative;
+        &__image {
+          width: 100%;
+        }
+        &__headline {
+          @include customFont(24px, 'roboto');
+          text-transform: capitalize;
+          color: $colorBlack;
+          position: relative;
+          &::after {
+            content: '';
+            @include customPosition(absolute, 40px, 0, 1, 60px, 3px, true);
+            background: $colorGreen;
+          }
+        }
+        &__description {
+          margin-top: 40px;
+        }
+        &__icon {
+          @include customPosition(absolute, 50%, 50%, 1, 0, 0, false);
+          transform:  translate(-50%, -50%);
+          font-size: 1.5rem;
+          color: $colorGreen;
+          padding: 20px 24px;
+          border-radius: 50%;
+          border: 1px solid $colorWhite;
+          box-shadow: 0 0 50px $colorWhite;
+          opacity: 0;
+          transition: all .3s ease;
+        }
+        &:hover .box__icon {
+          opacity: 1;
+        }
+      }
+      .box--padding {
+        padding: 40px;
+        @include customFont(14px, 'roboto');
+        color: $colorParagraph;
       }
     }
   }

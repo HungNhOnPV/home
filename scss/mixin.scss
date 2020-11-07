@@ -1,32 +1,50 @@
 @import "./variables.scss";
 
 @mixin customFontFace($fontFamily, $src) {
-    @font-face {
-        font-family: $fontFamily;
-        src: url($src);
-    }
+  @font-face {
+    font-family: $fontFamily;
+    src: url($src);
+  }
 }
 
 @mixin customPosition($position, $top, $left, $z, $width, $height, $result) {
-    position: $position;
-    top: $top;
-    left: $left;
-    z-index: $z;
-    @if $result == true {
-        width: $width;
-        height: $height;
-    }
+  position: $position;
+  top: $top;
+  left: $left;
+  z-index: $z;
+  @if $result == true {
+    width: $width;
+    height: $height;
+  }
 }
 
 @mixin customBackground($url, $w, $h) {
-    background: url($url) no-repeat;
-    width: $w;
-    height: $h;
+  background: url($url) no-repeat;
+  width: $w;
+  height: $h;
 }
 
 @mixin customFont($size, $family) {
-    font: {
-        size: $size;
-        family: $family;
+  font: {
+    size: $size;
+    family: $family;
+  }
+}
+
+@mixin customTitle {
+  .title {
+    text-align: center;
+    margin: 95px 20% 50px 20%;
+    .headline {
+      @include customFont(32px, "roboto");
+      margin-bottom: 35px;
+      text-transform: capitalize;
+      color: $colorBlack;
     }
+    .description {
+      @include customFont(14px, "roboto");
+      color: $colorParagraph;
+      line-height: 2;
+    }
+  }
 }
