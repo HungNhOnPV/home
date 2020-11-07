@@ -183,4 +183,65 @@ main {
       }
     }
   }
+  .project {
+    background: #f5f9fc;
+    .header {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 100px;
+      margin-bottom: 55px;
+      &__headline {
+        @include customFont(30px, 'roboto');
+        text-transform: capitalize;
+        color: $colorBlack;
+        position: relative;
+        &::after {
+          content: '';
+          @include customPosition(absolute, 50px, 0, 1, 70px, 3px, true);
+          background: $colorGreen;
+        }
+      }
+      &__list {
+        .list {
+          display: flex;
+          list-style: none;
+          @include customFont(17px, 'roboto');
+          &__item {
+            margin: 10px 5px;
+            padding: 5px 10px;
+            text-transform: capitalize;
+          }
+          .active {
+            color: $colorGreen;
+            border: 2px solid $colorGreen;
+          }
+        }
+      }
+    }
+    .list-image {
+      display: flex;
+      margin-bottom: 55px;
+      .image {
+        width: 25%;
+      }
+    }
+    &__btn {
+      display: inline-block;
+      margin-left: 50%;
+      transform: translateX(-50%);
+      @include customFont(1rem, 'roboto');
+      padding: 10px 20px;
+      background: $colorGreen;
+      color: $colorWhite;
+      border-radius: 5px;
+      transition: all .3s ease;
+      border: 1px solid $colorGreen;
+      margin-bottom: 60px;
+      cursor: pointer;
+      &:hover {
+        background: $colorWhite;
+        color: $colorGreen;
+      }
+    }
+  }
 }

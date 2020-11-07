@@ -186,5 +186,72 @@ main .section1 .wrapper-cart .cart .btn {
   margin-top: 30px;
   cursor: pointer;
 }
+main .project {
+  background: #f5f9fc;
+}
+main .project .header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 100px;
+  margin-bottom: 55px;
+}
+main .project .header__headline {
+  font-size: 30px;
+  font-family: "roboto";
+  text-transform: capitalize;
+  color: #252528;
+  position: relative;
+}
+main .project .header__headline::after {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 0;
+  z-index: 1;
+  width: 70px;
+  height: 3px;
+  background: #89c441;
+}
+main .project .header__list .list {
+  display: flex;
+  list-style: none;
+  font-size: 17px;
+  font-family: "roboto";
+}
+main .project .header__list .list__item {
+  margin: 10px 5px;
+  padding: 5px 10px;
+  text-transform: capitalize;
+}
+main .project .header__list .list .active {
+  color: #89c441;
+  border: 2px solid #89c441;
+}
+main .project .list-image {
+  display: flex;
+  margin-bottom: 55px;
+}
+main .project .list-image .image {
+  width: 25%;
+}
+main .project__btn {
+  display: inline-block;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  font-size: 1rem;
+  font-family: "roboto";
+  padding: 10px 20px;
+  background: #89c441;
+  color: #fff;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  border: 1px solid #89c441;
+  margin-bottom: 60px;
+  cursor: pointer;
+}
+main .project__btn:hover {
+  background: #fff;
+  color: #89c441;
+}
 
 /*# sourceMappingURL=style.css.map */
